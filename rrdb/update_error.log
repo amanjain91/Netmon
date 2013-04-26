@@ -1,0 +1,5 @@
+10.248.127.233, 10.240.53.200, 1921, 233
+Traceback (most recent call last):
+  File "/opt/openstack_extra.aman/rrdb/update_tables.py", line 42, in <module>
+    ret = rrd_update(join(db_path,db_name), '%s:%d:%d' % (timestamp, int(src_val), int(dst_val))) 
+rrdtool.error: /opt/openstack_extra.aman/rrdb/10.248.127.233_10.240.53.200.rdd: illegal attempt to update using time 1367011681 when last update time is 1368174615 (minimum one second step)
